@@ -15,7 +15,7 @@ const MENU_ITEMS = [
   { name: '오시는 길', href: '#', url: '/location', current: false },
 ];
 
-function classNames(...classes) {
+function classNames(...classes: (string | boolean)[]) {
   return classes.filter(Boolean).join(' ');
 }
 
