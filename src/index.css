@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
 
 @layer base {
   :root {
@@ -39,4 +40,23 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+:root {
+  --pretendard-thin: 100;
+  --pretendard-extralight: 200;
+  --pretendard-light: 300;
+  --pretendard-regular: 400;
+  --pretendard-medium: 500;
+  --pretendard-semibold: 600;
+  --pretendard-bold: 700;
+  --pretendard-extrabold: 800;
+  --pretendard-black: 900;
+}
+
+* {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
